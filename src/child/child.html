@@ -1,0 +1,16 @@
+<template>
+    <div class="child-row slds-border_bottom" style={rowStyle}>
+        <div class="child-cell" style="flex: 0 0 5%">
+            <input type="checkbox" onchange={handleChange} value={row.checked} checked={row.checked}/>
+        </div>
+        <div class="child-cell" style="flex: 0 0 5%">
+            <span class="">{row.index}</span>
+        </div>
+        <div class="child-cell" style="flex: 1 0 10%">
+            <span class="">{row.name}</span>
+        </div>
+        <div class="child-cell" style="flex: 1 0 15%">
+            <span class="">{row.email}</span>
+        </div>
+    </div>
+</template>

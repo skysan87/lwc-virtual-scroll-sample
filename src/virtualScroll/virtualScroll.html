@@ -1,0 +1,12 @@
+<template>
+    <div class="viewport" style={viewportStyle} onscroll={scrollHandler}>    
+        <div class="content" style={contentStyle}>
+            <div class="offset-for-visible-rows" style={transformStyle}>
+                <template for:each={visibledata} for:item='row' for:index="idx">
+                    <c-child key={row.id} onselect={selectHandler} row={row} rowheight={rowheight}>
+                    </c-child>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>
