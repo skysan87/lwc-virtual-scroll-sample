@@ -19,7 +19,7 @@ export default class VirtualScroll extends LightningElement {
 
     connectedCallback() {
         // Since getData() is an async method, 
-        // it is disficult to get data at this time.
+        // it is difficult to get data at this time.
     }
 
     @api 
